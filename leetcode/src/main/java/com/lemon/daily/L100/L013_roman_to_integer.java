@@ -10,6 +10,7 @@ public class L013_roman_to_integer {
         int result = 0;
         int offset = 0;
         for (int i = 0; i < romans.length; i++) {
+            //startsWith(str,offset)
             if (s.startsWith(romans[i], offset)) {
                 result += nums[i];
                 offset += romans[i].length();

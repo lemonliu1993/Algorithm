@@ -7,16 +7,15 @@ package com.lemon.classify.linkedlist;
 public class T1_Reverse_Linked_List {
 
     public ListNode reverseList(ListNode head) {
+        ListNode result = new ListNode(0);
         if (head == null) {
             return null;
         }
-
-        ListNode result = new ListNode(0);
         while (head != null) {
-            ListNode nextHead = head.next;
+            ListNode newHead = head.next;
             head.next = result.next;
             result.next = head;
-            head = nextHead;
+            head = newHead;
         }
         return result.next;
     }

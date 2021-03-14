@@ -5,6 +5,7 @@ import java.util.Queue;
 
 /**
  * Created by lemoon on 2021/2/8 11:54 PM
+ * leetcode225
  */
 public class T1_Implement_Stack_using_Queues {
     private Queue<Integer> q1 = new LinkedList();

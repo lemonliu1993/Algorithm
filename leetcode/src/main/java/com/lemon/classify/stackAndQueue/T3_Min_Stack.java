@@ -11,12 +11,12 @@ public class T3_Min_Stack {
     Stack<Integer> min = new Stack<>();
 
     public void push(int x) {
-        if(min.isEmpty()){
+        if (min.isEmpty()) {
             min.push(x);
-        }else {
-            if(x<min.peek()){
+        } else {
+            if (x < min.peek()) {
                 min.push(x);
-            }else {
+            } else {
                 min.push(min.peek());
             }
         }
